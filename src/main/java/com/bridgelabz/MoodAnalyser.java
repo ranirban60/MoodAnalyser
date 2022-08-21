@@ -17,11 +17,18 @@ Default Constructor
   public MoodAnalyser(String message){
       this.message = message;
   }
+/*
+Here try catch block is used to handle NullPointer Exception
+ */
     public String analyseMood(){
+        try {
             if (message.contains("Sad"))
                 return "SAD";
             else
                 return "HAPPY";
+        }catch (Exception e){
+                return "HAPPY";
         }
   }
 
+}
