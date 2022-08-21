@@ -5,10 +5,20 @@ package com.bridgelabz;
 
 //Create class MoodAnalyzer
 public class MoodAnalyser {
-    /*
-    Call analyseMood function with message as parameter
-    and return Happy or Sad mood
-     */
+  private String message;
+/*
+Default Constructor
+ */
+  public MoodAnalyser(){
+
+  }
+  /*
+  Parameterized constructor with parameter message
+   */
+  public MoodAnalyser(String message){
+      this.message = message;
+  }
+
     public String analyseMood(String message){
     if(message.contains("Sad"))
         return "SAD";
