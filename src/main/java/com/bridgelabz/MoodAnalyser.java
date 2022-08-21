@@ -5,9 +5,9 @@ package com.bridgelabz;
 //Create class MoodAnalyzer
 public class MoodAnalyser {
   private String message;
-/*
-Default Constructor
- */
+  /*
+  Default Constructor
+   */
   public MoodAnalyser(){
 
   }
@@ -20,14 +20,16 @@ Default Constructor
 /*
 Here try catch block is used to handle NullPointer Exception
  */
-    public String analyseMood(){
+    public String analyseMood() throws MoodAnalyserException{
         try {
+            if (message.length()==0)
+                throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.ENTERED_EMPTY , "Please enter proper message!");
             if (message.contains("Sad"))
                 return "SAD";
             else
                 return "HAPPY";
-        }catch (Exception e){
-                return "HAPPY";
+        } catch(NullPointerException e) {
+            throw new MoodAnalyserException(MoodAnalyserException.ExceptionType.ENTERED_NULL , "Please enter proper message!");
         }
   }
 

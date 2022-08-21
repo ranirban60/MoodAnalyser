@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.MoodAnalyserTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-08-21T05:31:07" hostname="DESKTOP-42C79FL" time="0.045">
+<testsuite name="com.bridgelabz.MoodAnalyserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-08-21T06:18:27" hostname="DESKTOP-42C79FL" time="0.059">
   <properties/>
-  <testcase name="testMoodAnalyze_ForHappyMood()" classname="com.bridgelabz.MoodAnalyserTest" time="0.041"/>
-  <testcase name="testMoodAnalyze_ForSadMood()" classname="com.bridgelabz.MoodAnalyserTest" time="0.001"/>
-  <testcase name="testMoodAnalyze_ForInvalidMood()" classname="com.bridgelabz.MoodAnalyserTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testMoodAnalyse_ForEmptyMood()" classname="com.bridgelabz.MoodAnalyserTest" time="0.053"/>
+  <testcase name="testMoodAnalyse_ForSadMood()" classname="com.bridgelabz.MoodAnalyserTest" time="0.001"/>
+  <testcase name="testMoodAnalyse_ForInvalidMood()" classname="com.bridgelabz.MoodAnalyserTest" time="0.001"/>
+  <testcase name="testMoodAnalyse_ForHappyMood()" classname="com.bridgelabz.MoodAnalyserTest" time="0.001"/>
+  <system-out><![CDATA[com.bridgelabz.MoodAnalyserException: Please enter proper message!
+ENTERED_EMPTY
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
